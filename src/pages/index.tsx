@@ -1,15 +1,16 @@
-import Head from 'next/head'
+import Head from 'next/head';
+
+import { Header } from '../components/Header';
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Meu curriculo</title>
-        <meta name="description" content="Página pessoal com meu curriculo" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main >
+        <Header />
+
         <h1 >
           Seja bem vindo!
         </h1>
