@@ -9,7 +9,6 @@ export default function Home() {
         <title>Meu curriculo</title>
       </Head>
       <main >
-        <Header />
 
         <h1 >
           Seja bem vindo!

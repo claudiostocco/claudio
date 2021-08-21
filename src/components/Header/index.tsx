@@ -1,30 +1,38 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+
+import { Menu } from "./Menu";
 
 export function Header() {
     return (
-        <Flex
+        <Box
             as='header'
             w='100%'
             maxW={1200}
-            h='28'
+            h='32'
             mx='auto'
-            mt='4'
+            my='4'
             px='6'
-            align='center'
         >
-            <Image 
-                h='24'
-                src='/images/logo.jpg' alt='Logo'
-            />
+            <Box w='100%' h='80%' bg='gray.600'>
+                <Image 
+                    display='inline-block'
+                    h='90%'
+                    verticalAlign='top'
+                    src='/images/logo.jpg' alt='Logo'
+                />
 
-            <Text
-                fontSize='5xl'
-                fontWeight='bold'
-                letterSpacing='wide'
-                w='64'
-            >
-                CMS
-            </Text>
-        </Flex>
+                <Text
+                    as='span'
+                    fontSize='5xl'
+                    fontWeight='bold'
+                    letterSpacing='wide'
+                    w='64'
+                    ml='4'
+                >
+                    Claudio Marcio Stocco
+                </Text>
+            </Box>
+            <Menu />
+        </Box>
     )
 }
