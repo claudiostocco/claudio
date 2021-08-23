@@ -1,6 +1,6 @@
 import Head from 'next/head';
+import { Box, Heading, Text } from '@chakra-ui/react';
 
-import { Header } from '../components/Header';
 
 export default function Home() {
   return (
@@ -8,16 +8,22 @@ export default function Home() {
       <Head>
         <title>Meu curriculo</title>
       </Head>
-      <main >
-
-        <h1 >
+      <Box
+            as='main'
+            w='100%'
+            maxW={1200}
+            mx='auto'
+            my='4'
+            px='6'
+      >
+        <Heading>
           Seja bem vindo!
-        </h1>
+        </Heading>
 
-        <p>
-          Para meu curriculo acesse <a href="http://www.claudio.eng.br/">claudio.eng.br</a>
-        </p>
-      </main>
+        <Text>
+          Trabalho com  desenvolvimento de sistemas a 20 anos, sou fluente em Delphi e SQL, conheço C++ e Java e arranho um pouco em javascript, HTML e CSS. Estou cursando Engenharia da Computação e tenho a intenção de estudar ReactJS/NodeJS.
+        </Text>
+      </Box>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 import { Menu } from "./Menu";
 
@@ -16,7 +16,7 @@ export function Header() {
             <Box w='100%' h='80%' bg='gray.600'>
                 <Image 
                     display='inline-block'
-                    h='90%'
+                    h='100%'
                     verticalAlign='top'
                     src='/images/logo.jpg' alt='Logo'
                 />
