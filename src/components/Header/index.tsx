@@ -13,7 +13,7 @@ export function Header() {
             my='4'
             px='6'
         >
-            <Box w='100%' h='80%' bg='gray.600'>
+            <Box w='100%' h='80%' bg='gray.800'>
                 <Image 
                     display='inline-block'
                     h='100%'
