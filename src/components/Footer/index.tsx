@@ -1,13 +1,14 @@
-import { Box, HStack, Image, Link, Text } from "@chakra-ui/react";
+import { Box, HStack, Link, Text } from "@chakra-ui/react";
 
 export function Footer() {
     return (
         <Box
             as='footer'
-            position={"fixed"}
-            bottom='0'
+            position={"absolute"}
             w='100%'
+            mt='8'
             mb='4'
+            top='100%'
         >
             <Box
                 w='100%'
