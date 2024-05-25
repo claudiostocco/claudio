@@ -13,7 +13,7 @@ export function ActiveItem({ children, shouldMatchExactHref = false, ...rest }: 
                      (!shouldMatchExactHref && (asPath.startsWith(String(rest.href)) || asPath.startsWith(String(rest.as))));
 
     return (
-        <Link {...rest}>
+        <Link {...rest} passHref legacyBehavior>
             {cloneElement(children,{
                 color: isActive ? 'pink.400' : 'gray.50'
             })}
